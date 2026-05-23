@@ -4,53 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ul{
+            background-color: indianred;
+            color: ghostwhite;
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            font-family: cursive;
+            font-size: 40px;
+         }
+         #start{
+            color: dimgrey;
+            background-color: bisque;
+            font-style: italic;
+           text-align: center;
+         }
+         button{
+            color: coral;
+            background-color: cornflowerblue;
+            font-size:medium;
+            font-family: 'Times New Roman', Times, serif;
+
+         }
+         .cateogry-container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+         }
+         .cateogry-container div{
+            width: 220px;
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 10 px gray;
+         }
+         .cateogry-container div:hover{
+            transform: scale(1.1);
+            background-color: blueviolet;
+         }
+         .cateogry-container h2{
+            color: crimson;
+            margin-bottom: 10px;
+         }
+         .cateogry-container p{
+            color: lightsalmon;
+            font-size: 19px;
+         }
+         .title{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(103, 4, 103);
+            margin-bottom: 30px;
+            background-color: darksalmon;
+         }
+         #Featured{
+            padding: 40px;
+            background-color: coral;
+         }
+         #Featured h2{
+            text-align: center;
+            font-size: 40px;
+            color: #03c2d3;
+            padding: 10px 20px;
+        border-radius: 8px;
+        cursor:pointer;
+        font-size:18px;
+
+
+         }
+         #Featured h2:hover{
+            background-color: goldenrod;
+            transform: rotate3d(180deg);
+         }
+
+         #Featured{
+            display: flex;
+            justify-content:center;
+            gap: 30px;
+            flex-wrap: wrap;
+         }
+         #Featured div{
+            width: 220px;
+            background:whitesmoke ;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+             box-shadow: 0px 4px 15px rgba(0,0,0,0.2); 
+             transition: 0.3s; 
+         }
+         #Featured div:hover{
+            transform:translateY(-10px);
+
+         }
+         #Featured img{
+                width: 200px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 10px;
+         }
+         #Featured strong{
+            display: block;
+            font-size: 28px;
+            color: sandybrown;
+            margin-top: 15px;
+
+         }
+         #Featured p{
+            font-size: 22px;
+        color: mediumvioletred;       
+      }
+      #Featured button{
+        background-color: olive;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor:pointer;
+        font-size:18px;
+      }
+         #Featured button:hover{
+            background-color: tomato;
+         }
+           #home button{
+            background-color: aquamarine;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor:pointer;
+        font-size:18px;
+           }
+           #home button:hover{
+            background-color: darkorchid;
+           }
+    </style>
+
 </head>
 <body>
     <header>
       <nav>
-       <ul>
-           <li href="#Home">Home</li>
-           <li href="#Featured">Books</li>
-           <li href="#Cateogry">Cateogry</li>
-           <li href="#Reviews">Reviews</li>
+        <ul >
+           <li><a href="#Home">Home</li>
+           <li><a href="#Featured">Books</li>
+           <li><a href="#Cateogry">Cateogry</li>
+           <li><a href="#Reviews">Reviews</li>
        </ul>
-      </nav>
+       </nav>
     </header>
     <main>
             <section id="home">
-            <h2>Welcome to Book Hive 📚🎒🔖📑</h2>
+            <h2 id="start">Welcome to Book Hive 📚🎒🔖📑</h2>
             <img src="https://images.pexels.com/photos/37047505/pexels-photo-37047505.jpeg"width="1000"height="450" >
-            <button><a href="#Featured">books</a></button>
+            <button ><a href="#Featured">books</a></button>
             </section>
             <section id="Featured">
             <h2> Featured books</h2>
-            <div>
+            <div class="book-container">
+            <div >
                 <img src="https://images.pexels.com/photos/26647221/pexels-photo-26647221.jpeg" height="100" width="100"><br>
                 <strong>Harry Potter</strong>
                 <p>$50.00</p>
                 <button>buy now</button>
             </div>
-            <div>
+            <div >
                 <img src="https://images.pexels.com/photos/1480335/pexels-photo-1480335.jpeg" height="100" width="100"><br>
                 <strong>Pride and Prejudice</strong>
                 <p>$70.00</p>
                 <button>buy now</button>
             </div>
-            <div>
+            <div >
                 <img src="https://images.pexels.com/photos/29663220/pexels-photo-29663220.jpeg" height="100" width="100"><br>
                 <strong>Great Expectations</strong>
                 <p>$90.00</p>
                 <button>buy now</button>
             </div>
-            <div>
+            <div >
                 <img src="https://images.pexels.com/photos/7175398/pexels-photo-7175398.jpeg" height="100" width="100"><br>
                 <strong>Wuthering Heights</strong>
                 <p>$40.00</p>
                 <button>buy now</button>
             </div>
+            </div>
             </section>
             <section id="Cateogry">
-            <h2>Cateogry</h2>
+            <h2 class="title">Cateogry</h2>
+            <div class="cateogry-container">
             <div>
                 <h2>Fiction</h2>
                 <p>Novels,fantasy,stories</p>
@@ -70,6 +209,7 @@
             <div>
                 <h2>History</h2>
                 <p> past stories and civilizations</p>
+            </div>
             </div>
             </section>
             <section id="Reviews">
