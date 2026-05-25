@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            border:1px solid black;
+            width: 250px;
+            text-align: center;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px;
+            background-color: rgb(205, 162, 131);
+            box-shadow: 2px  5px   9px rgb(90, 53, 9);
+
+        }
+        .product:hover{
+             box-shadow: 2px  5px  19px rgb(239, 62, 4);
+             transition: 2ms;
+             }
+        .product img{
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .product button{
+            background-color: aquamarine;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(224, 141, 33);
+        }
+        .product h2{
+            color: aliceblue;
+        }
+        .product p{
+            color: aliceblue;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/27860686/pexels-photo-27860686.jpeg">
+        <h2>filter coffee</h2>
+        <p>rs 400.00</p>
+        <button>buy now</button>
+
+    </div>
+    
+    <div class="product">
+        <img src="https://images.pexels.com/photos/14974618/pexels-photo-14974618.jpeg">
+        <h2>cookies</h2>
+        <p>rs 300.00</p>
+        <button>buy now</button>
+
+    </div>
+    
+   <div class="product">
+        <img src="https://images.pexels.com/photos/4635595/pexels-photo-4635595.png">
+        <h2>maggi</h2>
+        <p>rs 40.00</p>
+        <button>buy now</button>
+
+    </div>
+    
+</body>
+</html>
