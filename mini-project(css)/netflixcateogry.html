@@ -4,8 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        nav a{
+            display: inline;
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+            margin-left: 15px;
+        }
+        nav a:hover{
+            background: black;
+            color: aliceblue;
+            transition: 0.5ms;
+        }
+        .cateogries{
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+         .cateogry{
+            border: 1px solid black;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .cateogry:hover{
+            background:black;
+            color: azure;         
+               transition: 0.5s;
+        }
+        .movie{
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           gap: 40px;
+           margin-top: 30px;
+        }
+        .movie-card{
+            border: 2px solid black;
+            padding: 40px;
+            text-align: center;
+        }
+        .movie-card:hover{
+            transform: scale(1.05);
+            transition: 2s;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>movie zone</h1>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">movies</a>
+            <a href="#">series</a>
+            <a href="#">my list</a>
+
+
+        </nav>
+    </header>
+    <section class="cateogries">
+        <div class="cateogry">action</div>
+        <div class="cateogry">horror</div>
+
+         <div class="cateogry">drma</div>
+
+         <div class="cateogry">comedy</div>
+
+    </section>
+    <section class="movie">
+        <div class="movie-card">
+            <h2>avengers</h2>
+        </div>
+        <div class="movie-card">
+            <h2>one piece</h2>
+        </div>
+        <div class="movie-card">
+            <h2>batman</h2>
+        </div>
+        <div class="movie-card">
+            <h2>openheimer</h2>
+        </div>
+        <div class="movie-card">
+            <h2>batman</h2>
+        </div>
+        <div class="movie-card">
+            <h2>don of jaunpur</h2>
+        </div>
+        <div class="movie-card">
+            <h2>kgf</h2>
+        </div>
+        <div class="movie-card">
+            <h2>dhurundhar</h2>
+        </div>
+    </section>
     
 </body>
 </html>
