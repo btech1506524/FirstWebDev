@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cart - JewelsHub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fff8e7,#f3f6ff);
+    min-height:100vh;
+}
+
+header{
+    background:linear-gradient(90deg,#000,#222,#000);
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+header h1{
+    color:gold;
+    font-size:40px;
+    text-shadow:0 0 10px rgba(255,215,0,0.6);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#007bff,#00d4ff);
+    padding:12px 25px;
+    border-radius:30px;
+    margin-bottom:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    transform:translateY(-3px);
+}
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.cart-item:hover{
+    transform:translateY(-5px);
+}
+
+.cart-item img{
+    width:150px;
+    height:150px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.product-info{
+    flex:1;
+}
+
+.product-info h3{
+    font-size:26px;
+    color:#222;
+}
+
+.product-info p{
+    color:#666;
+    margin-top:8px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    color:#c89b00;
+}
+
+.remove-btn{
+    background:linear-gradient(45deg,#ff4b2b,#ff416c);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.summary{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    border-top:5px solid gold;
+}
+
+.summary h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+    font-size:18px;
+}
+
+.total{
+    font-size:24px;
+    font-weight:bold;
+    color:#000;
+}
+
+.checkout-btn{
+    width:100%;
+    margin-top:20px;
+    padding:18px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(45deg,gold,#ffb700);
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.checkout-btn:hover{
+    transform:scale(1.02);
+}
+
+@media(max-width:768px){
+    .cart-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .summary-row{
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>💎 JewelsHub Cart</h1>
+</header>
+
+<div class="container">
+
+    <a href="jewelshub.html" class="back-btn">⬅ Back to Shop</a>
+
+    <div class="cart-item">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+            <h3>Diamond Ring</h3>
+            <p>Elegant diamond ring crafted for timeless beauty.</p>
+        </div>
+        <div class="price">$299</div>
+        <button class="remove-btn">Remove</button>
+    </div>
+
+    <div class="cart-item">
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80">
+        <div class="product-info">
+            <h3>Gold Necklace</h3>
+            <p>Premium 22K gold necklace with luxury finish.</p>
+        </div>
+        <div class="price">$499</div>
+        <button class="remove-btn">Remove</button>
+    </div>
+
+    <div class="summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$798</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Shipping</span>
+            <span>Free</span>
+        </div>
+
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>$798</span>
+        </div>
+
+        <button class="checkout-btn">
+            Proceed to Checkout
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
+```

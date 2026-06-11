@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JewelsHub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#faf7f2;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#111;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:gold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:gold;
+    color:black;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Products */
+.products{
+    padding:70px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.card button:hover{
+    background: orange;
+    transition: 5ms;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    color:#777;
+    margin-bottom:15px;
+}
+
+.card button{
+    background:gold;
+    border:none;
+    padding:10px 20px;
+    margin-bottom:20px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* About */
+.about{
+    background:#fff;
+    padding:70px 8%;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Contact */
+.contact{
+    padding:70px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    background:gold;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">JewelsHub💍💎😘😍</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="new.html">Mythaela</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Luxury Jewelry Collection</h1>
+       <b> <p>Discover timeless elegance with JewelsHub</p></b>
+       <p>beautify yourself with the jewels 
+        from Artificial to Real Touch</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h2>Featured Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80" alt="">
+            <h3>Diamond Ring</h3>
+            <p>$299</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="">
+            <h3>Gold Necklace</h3>
+            <p>$499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80" alt="">
+            <h3>Pearl Earrings</h3>
+            <p>$199</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/5497303/pexels-photo-5497303.jpeg " alt="">
+            <h3>Metal Earrings</h3>
+            <p>$99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/17501823/pexels-photo-17501823.jpeg" alt="">
+            <h3>Silver Earrings</h3>
+            <p>$499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/32988538/pexels-photo-32988538.jpeg" alt="">
+            <h3>diamond set</h3>
+            <p>$499</p>
+            <button>Add to Cart</button>
+        </div>
+      <div class="card">
+            <img src="https://images.pexels.com/photos/37401923/pexels-photo-37401923.jpeg" alt="">
+            <h3>bracelets</h3>
+            <p>$699</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/8886928/pexels-photo-8886928.jpeg" alt="">
+            <h3>ankelets</h3>
+            <p>$599</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/8575184/pexels-photo-8575184.jpeg" alt="">
+            <h3>mangteeka</h3>
+            <p>$199</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About JewelsHub</h2>
+    <p>
+        JewelsHub is dedicated to bringing you premium-quality jewelry
+        crafted with elegance and precision. Our collections combine
+        luxury, style, and timeless beauty to make every occasion special.
+        Our brand is most affordable as well as feasible to our customers.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 JewelsHub. All Rights Reserved.</p>
+    <p>privacy holder</p>
+</footer>
+
+</body>
+</html>
