@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>
+    <p id="text">hi everyone</p>
+    <p id="newp">this is old para</p>
+    <button id="btn">login</button>
+    <div id="mydiv">this is div</div>
+    <div id="container"></div>
+    <ul id="mylist">
+
+    </ul>
+    <body>
+        <script>
+          const paragraph=document.getElementById("text")
+       // var paragraph =500
+       paragraph.textContent="hello guysssssssss"
+        console.log(paragraph)
+       
+        const  button =document.getElementById("btn")
+        button.textContent="logout"   
+        const div=document.getElementById("mydiv")
+        console.log(div)
+       // div.innerHTML="<h1>this is heading tag</h1>"
+        div.innerHTML = `
+    <p id="myp">Hello this is <mark>updated</mark></p>
+    <button>Smile</button>
+    <em>Happy weekend</em>
+`;
+const ele3 = document.getElementById("newp");
+ele3.style.color = "red";
+
+const para = document.createElement("p");
+para.innerText = "This is the new innings and created using JavaScript";
+
+document.getElementById("container").appendChild(para);
+
+const li = document.createElement("li");
+li.innerText = "apple";
+
+document.getElementById("mylist").appendChild(li);
+</script>
+</body>
+</html>
